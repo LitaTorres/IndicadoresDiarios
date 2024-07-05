@@ -26,7 +26,6 @@
 /* Configurando colores y letra*/
 .iconos a {
     color: #fff;
-
 }
 
 .btn {
@@ -53,5 +52,25 @@
     font-family: "Anton SC", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
+
+.tooltip {
+    --bs-tooltip-color: var(--bs-white);
+}
+
+.custom-tooltip1 {
+    --bs-tooltip-bg: #d74242;
+}
+
+.custom-tooltip2 {
+    --bs-tooltip-bg: #4e9f3d;
+}
+
+.custom-tooltip3 {
+    --bs-tooltip-bg: #7f4ca5;
+}
+
+.custom-tooltip4 {
+    --bs-tooltip-bg: #1a3c7d;
+}

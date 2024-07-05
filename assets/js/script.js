@@ -391,3 +391,9 @@ $(document).ready(function () {
         document.getElementById("valor2utm").value = "";
     });
 });
+
+
+//Tooltips
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
