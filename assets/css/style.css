@@ -2,6 +2,7 @@
 .graficoAmpliado {
     display: none;
     position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -17,12 +18,40 @@
     position: absolute;
     top: 20px;
     right: 25px;
-    color: #fff;
+    color: #d74242;
     font-size: 35px;
     font-weight: bold;
 }
 
+/* Configurando colores y letra*/
 .iconos a {
     color: #fff;
 
 }
+
+.btn {
+    color: white;
+}
+
+.btn-rojo {
+    background-color: #d74242;
+}
+
+.btn-verde {
+    background-color: #4e9f3d;
+}
+
+.btn-morado {
+    background-color: #7f4ca5;
+}
+
+.btn-azul {
+    background-color: #1a3c7d;
+}
+
+.titulo {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

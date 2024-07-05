@@ -10,6 +10,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="#">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Indicadores Diarios</title>
@@ -46,7 +49,7 @@
 
     <section>
         <div class="container">
-            <h1 class="text-center pt-4">GRAFICOS INDICADORES DIARIOS</h1>
+            <h1 class="text-center pt-4 titulo">VARIACIÓN DE INDICADORES</h1>
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-3 col-lg-3 py-5">
                     <div id="chartContainerDolar" style="height: 300px; width: 100%;"></div>
@@ -70,8 +73,78 @@
         <div id="chartContainerAmpliado" style="height: 600px; width: 85%;"></div>
     </div>
 
-    <!--FOOTER-->
+    <section>
+        <div class="container">
+            <h2 class="text-center pb-3 titulo"> Convertidor</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
+                    <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Convertir Dolares - Pesos Chilenos</h5>
+                            <label for="valor1dolar" class="form-label">Cantidad Dolares USD:</label>
+                            <input id="valor1dolar" type="text" class="form-control mb-2" placeholder="Dolares">
+                            <label for="valor2dolar" class="form-label ">Cantidad Pesos Chilenos CLP:</label>
+                            <input id="valor2dolar" type="text" class="form-control mb-3" placeholder="Pesos Chilenos">
+                            <button id="btn-convertir-dolar" type="button" class="btn btn-rojo mb-2">Convertir</button>
+                            <p> Resultado: <span class="resultado-dolar"></span> </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
+                    <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Convertir Euro - Pesos Chilenos </h5>
+                            <label for="valor1euro" class="form-label">Cantidad Euros EUR :</label>
+                            <input id="valor1euro" type="text" class="form-control mb-2" placeholder="Euro">
+                            <label for="valor2euro" class="form-label">Cantidad Pesos Chilenos CLP:</label>
+                            <input id="valor2euro" type="text" class="form-control mb-3" placeholder="Pesos Chilenos">
+                            <button id="btn-convertir-euro" type="button" class="btn btn-verde mb-2">Convertir</button>
+                            <p> Resultado: <span class="resultado-euro"></span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
+                    <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"> Convertir UF - Pesos Chilenos </h5>
+                            <label for="valor1uf" class="form-label">Cantidad Unidad de Fomento UF:</label>
+                            <input id="valor1uf" type="text" class="form-control mb-2" placeholder="UF">
+                            <label for="valor2uf" class="form-label">Cantidad Pesos Chilenos CLP:</label>
+                            <input id="valor2uf" type="text" class="form-control mb-3" placeholder="Pesos Chilenos">
+                            <button id="btn-convertir-uf" type="button" class="btn btn-morado mb-2">Convertir</button>
+                            <p> Resultado: <span class="resultado-uf"></span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 mb-4">
+                    <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Convertir UTM - Pesos Chilenos</h5>
+                            <label for="valor1utm" class="form-label">Cantidad Unidad Tributaria Mensual UTM:</label>
+                            <input id="valor1utm" type="text" class="form-control mb-2" placeholder="UTM">
+                            <label for="valor2utm" class="form-label">Cantidad Pesos Chilenos CLP:</label>
+                            <input id="valor2utm" type="text" class="form-control mb-3" placeholder="Pesos Chilenos">
+                            <button id="btn-convertir-utm" type="button" class="btn btn-azul mb-2">Convertir</button>
+                            <p> Resultado: <span class="resultado-utm"></span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
     <footer class="text-center bg-dark text-white pt-3 pb-2 px-4">
         <div class="container">
             <div class="row py-4">
@@ -104,7 +177,6 @@
 
     <!--font awesome CSS-->
     <script src="https://kit.fontawesome.com/c194e7b6b0.js" crossorigin="anonymous"></script>
-
     <script src="assets/js/script.js"></script>
 
 </body>
